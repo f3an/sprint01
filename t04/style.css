@@ -1,0 +1,57 @@
+@media (min-width: 320px)
+{
+    .block
+    {
+        width: calc(100% - 25px);
+    }
+    .example-h1
+    {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px)
+{
+    .block {
+      width: calc(50% - 25px);
+    }
+    .example-h1 {
+      font-size: 30px;
+    }
+}
+@media (min-width: 1024px)
+{
+    .block {
+      width: calc(25% - 25px);
+    }
+}
+.html
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block
+{
+    display: inline-block;
+    margin: 10px auto;
+    border: 1px solid lightgray;
+    padding: 10px 10px;
+}
+.h
+{
+    text-align: center;
+    position: relative;
+}
+
+
+.inline-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.prot
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

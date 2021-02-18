@@ -1,0 +1,31 @@
+h1
+{
+    text-align: center;
+}
+
+.src
+{
+    justify-content: center;
+    display: flex;
+}
+.src>button
+{
+    margin: 0;
+    padding: 0;
+    color: green;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 2em;
+}
+.src>input
+{
+    margin: 0;
+    padding: 0;
+    text-indent: 0px;
+    transition: text-indent 300ms;
+    height: 2em;
+    width: 10cm;
+}
+.sr:hover, button:hover{
+    color:red;
+}
