@@ -1,87 +1,83 @@
-html, body
-{
-  height: 90%;
-  display: block;
-}
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul
-{
-  list-style: none;
-}
-body
-{
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: aqua;
-  color: white;
-  font-family: 'Loto',sans-serif;
+body {
+    background-color: rgba(0, 150, 62, 0.233);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
 
-header
-{
-  background-color: teal;
-  padding: 2rem 0;
-}
-nav
-{
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo
-{
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: 700;
+header {
+    color: #fd896c;
+    display: flex;
+    background-color: #112a6d;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu > li,.menu>a
-{
-  display: inline-block;
-}
-.menu a
-{
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  padding: 10px 1.5rem;
-  transition: backgrund-color .22s ease,color .22s ease;
-}
-.menu a:hover
-{
-  background-color: #f34949;
-  color: #fff;
-}
-.sub
-{
-  display: none;
-  position: absolute;
-  background-color: teal;
-  width: 140px;
-}
-.subb
-{
-  left: 0;
-  display: none;
-  position: absolute;
-  left: 100%;
-  width: 140px;
-  top: 0;
-  background-color: teal;
+.dropdown-menu * {
+    margin: 0px;
+    padding: 0px;
 }
 
-.menu li:hover > .sub
-{
-  display: block;
+.dropdown-menu>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
-.sub li:hover > .subb
-{
-  display: block;
+
+.dropdown-menu>ul li a {
+    display: block;
+    background-color: #849ad4;
+    padding-top: 30px;
+    min-width: 300px;
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px 5px 0px 0px;
+    color: #fd896c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.dropdown-menu ul li {
+    position: relative;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #3e4f7e;
+    color: #fd896c;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+.dropdown-menu li ul {
+    position: absolute;
+    list-style: none;
+    display: none;
+}
+
+.dropdown-menu li ul a {
+    background-color: #6f6dff;
+    color: #13116d;
+    margin: 0px;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    height: 30px;
+    padding: 10px 0px 5px 20px;
+}
+
+.dropdown-menu li>ul li ul {
+    position: absolute;
+    right: -320px;
+    top: 0px;
+}
+
+.dropdown-menu li:hover>ul {
+    display: block;
 }

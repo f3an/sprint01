@@ -1,13 +1,15 @@
-.img
-{
+.img {
     float: left;
-    margin: 4px 10px 2px 0px; 
+    margin: 4px 10px 2px 0px;
 }
-p
-{
+
+p {
     font-size: larger;
 }
-@media print
-{
-    .img{float: unset; display: block;}
+
+@media print {
+    .img {
+        float: unset;
+        display: block;
+    }
 }

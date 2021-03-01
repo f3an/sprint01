@@ -1,25 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 07</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="topnav">
-                <li><a href="#!" class="brand-logo">Logo</a></li>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#phone" id="phone">+380950728855</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>t07</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- nav start -->
+    <div class="nav__container">
+        <nav>
+            <h1><a class="logo-main" href="./index.html">Oscorp</a></h1>
+            <span class="phone" href="#">+380950729506</span>
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <a href="#">lvl one</a>
+                        <ul>
+                            <li>
+                                <a href="#">lvl two</a>
+                                <ul>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">lvl two</a>
+                                <ul>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">lvl one</a>
+                        <ul>
+                            <li>
+                                <a href="#">lvl two</a>
+                                <ul>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">lvl two</a>
+                                <ul>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                    <li><a href="#">lvl three</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="sr">
+                <div class="src">
+                    <input type="search" placeholder="Enter search phrase" class="sr">
+                    <button type="submit" class="fn">Find</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end of nav -->
+
+    <!-- start of breadcrump -->
+    <ul class="breadcrumb">
+        <li><a href="./index.html">Home</a></li>
+        <li>Catalog</li>
+    </ul>
+    <!-- end of breadcrump -->
+
+    <!-- products -->
+    <section class="products">
+        <div class="section-model">
+            <h2>Catalog</h2>
+        </div>
+
+        <!-- start of radio filters -->
+        <div class="radio-filters">
+            <div class="form_radio_btn">
+                <input id="smartphone" type="radio" name="type" value="type-smartphone" />
+                <label for="smartphone">Danger</label>
+            </div>
+
+            <div class="form_radio_btn">
+                <input id="notebook" type="radio" name="type" value="type-notebook" />
+                <label for="notebook">Not Danger</label>
+            </div>
+            <div class="form_radio_btn">
+                <input id="all-of-types" type="radio" name="type" value="all-of-types" checked />
+                <label for="all-of-types">All</label>
+            </div>
+        </div>
+        <!-- end of of radio filters -->
+        <!-- start of catalog grid -->
+        <div class="catalog-grid">
+            <!-- start of filters menu -->
+            <div class="filters-menu">
+                <div class="colors-checkbox">
+                    <p><b>Type of spiders</b></p>
+                    <p>
+                        <input type="checkbox" name="color" value="graphite" />Brown Recluse Spider<br />
+                        <input type="checkbox" name="color" value="pacific-blue" />American House Spiders
+                        <br />
+                        <input type="checkbox" name="color" value="silver" />Goliath Bird-Eater Spider<br />
+                        <input type="checkbox" name="color" value="gold" />Wolf Spider<br />
+                        <input type="checkbox" name="color" value="space-gray" />Black Widow Spider
+                        <br />
+                        <input type="checkbox" name="color" value="red" />Hobo Spider<br />
+                        <input type="checkbox" name="color" value="blue" />Golden Silk Spider<br />
+                    </p>
+                </div>
+                <div class="price-container">
+                    <p><b>Price</b></p>
+                    <div class="price">
+                        <input id="price-range" type="range" value="1849" min="439" max="1849" />
+                        <p id="price-count">
+                            <h6>$2000</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of filters menu -->
+            <!-- products center -->
+            <div class="products-center">
+                <!-- single product -->
+                <a href="card.html">
+                    <article class="American House Spider">
+                        <div class="img-container">
+                            <div class="slider-container">
+                                <img src="./assets/image/American-House-Spider.jpg" alt="product" style="display: block; width: 100%; height: 300px; cursor: pointer;" />
+                            </div>
+                            <button class="bag-btn" data-id="1">
+                  <i class="fas fa-shopping-cart"></i>
+                  add to cart
+                </button>
+                        </div>
+                        <h3>American House Spider</h3>
+                        <h4>$1399</h4>
+                    </article>
+                </a>
+                <!-- end of single product -->
+                <!-- single product -->
+                <a href="card.html">
+                    <article class="Brown Recluse Spider">
+                        <div class="img-container">
+                            <div class="slider-container">
+                                <img src="./assets/image/Brown-Recluse-Spider.jpg" alt="product" style="display: block; width: 100%; height: 300px; cursor: pointer;" />
+                            </div>
+                            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to cart
+            </button>
+                        </div>
+                        <h3>Brown Recluse Spider</h3>
+                        <h4>$1000</h4>
+                    </article>
+                </a>
+                <!-- end of single product -->
+                <!-- single product -->
+                <a href="card.html">
+                    <article class="Brown Recluse Spider">
+                        <div class="img-container">
+                            <div class="slider-container">
+                                <img src="./assets/image/Goliath-Bird-Eater-Spider.jpg" alt="product" style="display: block; width: 100%; height: 300px; cursor: pointer;" />
+                            </div>
+                            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to cart
+            </button>
+                        </div>
+                        <h3>Goliath Bird Eater Spider</h3>
+                        <h4>$1400</h4>
+                    </article>
+                </a>
+                <!-- end of single product -->
+                <!-- single product -->
+                <a href="card.html">
+                    <article class="Brown Recluse Spider">
+                        <div class="img-container">
+                            <div class="slider-container">
+                                <img src="./assets/image/Tarantula.jpg" alt="product" style="display: block; width: 100%; height: 300px; cursor: pointer;" />
+                            </div>
+                            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart"></i>
+              add to cart
+            </button>
+                        </div>
+                        <h3>Tarantula</h3>
+                        <h4>$1200</h4>
+                    </article>
+                </a>
+                <!-- end of single product -->
+            </div>
+            <!-- end of products center -->
+    </section>
+    <!-- end of products -->
+    <!-- start of footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="contacts">
+                <p>Kyiv, Ukraine</p>
+            </div>
+            <div class="logo-div">
+                <p class="logo"><a href="index.html">OSCORP</a></p>
+            </div>
+            <div class="terms">
+                <p>Subscribe</p>
+                <p>Contacts</p>
+                <p>Terms of Policy</p>
+                <p>Terms of Service</p>
+                <p>Terms and conditions</p>
+            </div>
+            <div class="copyright">OSCORP © All Right reserved</div>
+        </div>
+    </footer>
+    <!-- end of footer -->
 </body>
+
 </html>

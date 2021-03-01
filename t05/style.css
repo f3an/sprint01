@@ -1,15 +1,13 @@
-h1
-{
+h1 {
     text-align: center;
 }
 
-.src
-{
+.src {
     justify-content: center;
     display: flex;
 }
-.src>button
-{
+
+.src>button {
     margin: 0;
     padding: 0;
     color: green;
@@ -17,8 +15,9 @@ h1
     padding-right: 5px;
     height: 2em;
 }
-.src>input
-{
+
+.src>input {
+    color: green;
     margin: 0;
     padding: 0;
     text-indent: 0px;
@@ -26,6 +25,8 @@ h1
     height: 2em;
     width: 10cm;
 }
-.sr:hover, button:hover{
-    color:red;
+
+.sr:hover,
+button:hover {
+    color: red;
 }

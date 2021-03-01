@@ -1,9 +1,8 @@
-img
-{
+img {
     height: auto;
     width: 10%;
 }
-.ig:hover ~ img:nth-child(2n)
-{
+
+.ig:hover~img:nth-child(2n) {
     opacity: 0;
 }
